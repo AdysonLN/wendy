@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='utf-8'?>
+<dialogs>
+  <define class="poweroff" x="0" y="0">
+    <visual>
+      <pos x="+0" y="+0" />
+      <size width="1280" height="800" />
+      <off color="#000000" />
+    </visual>
+    <visual>
+      <pos x="+200" y="+200" />
+      <size width="1280-400" height="800-430" />
+      <off color="#252525" />
+    </visual>
+    <textzone>
+      <pos x="+200" y="+240" />
+      <size width="1280-400" height="80" />
+      <text fontsize="46" color="#eeeeee" align="center" text="Power Off The Player ?" />
+    </textzone>
+    <button action="set '$denonsclivepower' 0">
+      <pos x="+200+120" y="+390" />
+      <size width="230" height="90" />
+      <off color="#404040" />
+      <text fontsize="34" color="#eeeeee" align="center" localize="true" text="CANCEL" />
+    </button>
+    <button action="set '$denonsclivepower' 0 &amp; controllerscreen_action powerdown">
+      <pos x="+200+120+240+200-30" y="+390" />
+      <size width="230" height="90" />
+      <off color="#404040" />
+      <text fontsize="34" color="#eeeeee" align="center" localize="true" text="POWER OFF" />
+    </button>
+  </define>
+  <define class="exitusb" x="0" y="0">
+    <visual>
+      <pos x="+0" y="+0" />
+      <size width="1280" height="800" />
+      <off color="#000000" />
+    </visual>
+    <visual>
+      <pos x="+200" y="+200" />
+      <size width="1280-400" height="800-430" />
+      <off color="#252525" />
+    </visual>
+    <textzone>
+      <pos x="+200" y="+240" />
+      <size width="1280-400" height="80" />
+      <text fontsize="46" color="#eeeeee" align="center" text="Restart in Standalone mode ?" />
+    </textzone>
+    <button action="set '$denonsclivesource' 0">
+      <pos x="+200+120" y="+390" />
+      <size width="230" height="90" />
+      <off color="#404040" />
+      <text fontsize="34" color="#eeeeee" align="center" localize="true" text="CANCEL" />
+    </button>
+    <button action="set '$denonsclivesource' 0 &amp; controllerscreen_action standalone">
+      <pos x="+200+120+240+200-30" y="+390" />
+      <size width="230" height="90" />
+      <off color="#404040" />
+      <text fontsize="34" color="#eeeeee" align="center" localize="true" text="RESTART" />
+    </button>
+  </define>
+  <define class="loadsec" x="300" y="200">
+    <visual>
+      <pos x="+0" y="+0" />
+      <size width="1280-600" height="280" />
+      <off color="#252525" />
+    </visual>
+    <textzone>
+      <pos x="+0" y="+40" />
+      <size width="1280-600" height="80" />
+      <text fontsize="28" color="#eeeeee" align="center" localize="true" format="A song is already playing on this deck.\nAre you use you want to stop it?" />
+    </textzone>
+    <button action="browser_enter">
+      <pos x="+93" y="+140" />
+      <size width="200" height="80" />
+      <off color="#404040" />
+      <text fontsize="30" color="#eeeeee" align="center" localize="OK" text="OK" />
+    </button>
+    <button action="browser_folder">
+      <pos x="+93+200+93" y="+140" />
+      <size width="200" height="80" />
+      <off color="#404040" />
+      <text fontsize="30" color="#eeeeee" align="center" localize="Cancel" text="Cancel" />
+    </button>
+  </define>
+</dialogs>
