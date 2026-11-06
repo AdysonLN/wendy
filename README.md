@@ -114,6 +114,11 @@ You can also run it from the Actions tab with an existing tag. Details about
 manual runs, retries and version checks are in the
 [development notes](docs/DEVELOPMENT.md#releases).
 
+## Contributing
+
+Have a fix or an idea? Send a pull request from your fork. See
+[CONTRIBUTING.md](CONTRIBUTING.md) for the short version of the process.
+
 ## AI disclosure
 
 I developed Wendy with substantial help from **OpenAI Codex**, including the
